@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html >
+<head >
+    <meta charset="utf-8" >
+    <title >Example App - Home</title >
+</head >
+<body >
+
+<!-- Uses built-in `if` helper. -->
+{{#if title}}
+    <h1 >{{title}}</h1 >
+{{/if}}
+<table >
+    <tbody >
+    {{#each books}}
+        <tr >
+            <td ><a href="book/{{name}}" >{{originalName}}</a ></td >
+        </tr >
+    {{/each}}
+    </tbody >
+</table >
+{{#each books}}
+    <a href="book/{{name}}" >{{originalName}}</a >
+{{/each}}
+</body >
+</html >
